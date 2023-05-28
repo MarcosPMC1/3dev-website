@@ -13,18 +13,12 @@ export default function Home() {
         <a className='hover:text-white' href="#founders">Fundadores</a>
       </header>
       <section className='p-10 flex flex-col gap-10 items-center'>
-        <div className='bg-slate-900 p-10 rounded-lg gap-2 flex flex-col mt-10 w-10/12'>
-          <h1 className='text-white text-5xl'>Portal do aluno personalizado</h1>
-          <span className='text-white text-lg'>Um portal totalmene personalizado de alunos, para sua instituição de ensino. Oferecendo diversas soluções práticas para você</span>
-          <div className='flex flex-row gap-10'>
-            <img src="/portal.png" alt="" className='w-[600px]' />
-            <div className='text-white'>
-              <div>
-                <h2 className='text-2xl'>Ofereçemos um serviço personalizado</h2>
-                <span className='text-sm'>Nosso objetivo é solucionar os problemas de uma institução de ensino, criando soluções e automatizando processos</span>
-              </div>
-            </div>
+        <div className='bg-slate-900 p-10 rounded-lg gap-2 flex flex-row mt-10 w-10/12'>
+          <div className='flex flex-col gap-10'>
+            <h1 className='text-white text-5xl'>Portal do aluno personalizado</h1>
+            <span className='text-white text-lg'>Um portal totalmene personalizado de alunos, para sua instituição de ensino. Oferecendo diversas soluções práticas para você</span>
           </div>
+          <img src="/portal.png" alt="" className='w-6/12 aspect-[16/9] rounded-md' />
         </div>
         <div className='bg-none p-16 w-10/12' id='modulos'>
           <h1 className='text-3xl text-white text-center'>Módulos</h1>
@@ -55,7 +49,7 @@ export default function Home() {
         <div className='text-white p-16 bg-slate-800 rounded-lg mt-48 w-10/12' id='sobre'>
           <h1 className='text-5xl'>Sobre nós</h1>
           <span className='text-lg'>
-            Com o objetivo de fornecer um sistema altamente customizado com diversas funcionalidades
+            Fundada em 2023 por Filipe, Marcos e Eduardo, 3 alunos de uma faculdade que encontraram uma solução a um problema no mercado, oferecendo uma solução customizada aos clientes
           </span>
           <div className='flex flex-row flex-wrap py-10 px-10 justify-around'>
             <div className='flex flex-col text-center items-center w-[250px] border-2 border-white rounded-md p-10'>
@@ -67,6 +61,11 @@ export default function Home() {
               <FaRegEye size={64} />
               <h2 className='text-2xl'>Visão</h2>
               <span className='mt-10'>Liderar como provedor de soluções digitais educacionais, impulsionando a transformação do ambiente acadêmico e promovendo o sucesso dos estudantes.</span>
+            </div>
+            <div className='flex flex-col text-center items-center w-[250px] border-2 border-white rounded-md p-10'>
+              <FaRegEye size={64} />
+              <h2 className='text-2xl'>Valores</h2>
+              <span className='mt-10'>Temos tranparencia de nosso projeto, valorizamos a criatividade de nossos colaboradores e um ambiente saudavél e respeitoso.</span>
             </div>
           </div>
         </div>

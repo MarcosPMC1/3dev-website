@@ -15,7 +15,7 @@ export default function Home() {
           <h1 className='text-white text-5xl'>Portal do aluno personalizado</h1>
           <span className='text-white text-lg'>Um portal totalmene personalizado de alunos, para sua instituição de ensino. Oferecendo diversas soluções práticas para você</span>
         </div>
-        <div className='flex flex-row flex-wrap bg-none p-16 justify-around'>
+        <div className='flex flex-row flex-wrap gap-10 bg-none p-16 justify-around'>
           <div className='flex flex-col bg-[#044D8C] w-[350px] items-center rounded-lg'>
             <img className='rounded-t-lg' src='/chamada.jpg'></img>
             <div className='p-10 flex flex-col items-center gap-10'>
@@ -49,13 +49,13 @@ export default function Home() {
           <div className='flex flex-row flex-wrap justify-around mt-28'>
             <div className='w-[200px] h-[350px] bg-slate-700 text-white flex flex-col items-center py-10 rounded-xl'>
               <img className='rounded-full w-28' src="/crisp.jpg" alt="" />
-              <h1 className='mt-5'>Filipe Crisp</h1>
+              <h1 className='mt-16'>Filipe Crisp</h1>
               <span>CEO</span>
             </div>
             <div className='bg-black border-black w-[1px]'></div>
             <div className='w-[200px] h-[350px] bg-slate-700 text-white flex flex-col items-center py-10 rounded-xl'>
               <img className='rounded-full w-28' src="https://media.licdn.com/dms/image/D4D03AQEp61YQGpArBA/profile-displayphoto-shrink_800_800/0/1681395566186?e=1690416000&v=beta&t=TE50gjktdoJaqdTEWBkSlIJV0rlfamxyle6LFj3FFcU" alt="" />
-              <h1 className='mt-5'>Marcos Cardoso</h1>
+              <h1 className='mt-16'>Marcos Cardoso</h1>
               <span>CTO</span>
             </div>
             <div className='bg-black border-black w-[1px]'></div>
@@ -66,8 +66,32 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className='p-10 bg-slate-900 rounded-2xl'>
+          <h1 className='text-white text-2xl px-12'>Entre em contato</h1>
+          <div className='flex flex-col text-white px-20 py-2'>
+            <label>Nome</label>
+            <input type="text" placeholder='Nome' className='px-4 py-2 text-black rounded-lg'/>
+          </div>
+          <div className='flex flex-col text-white px-20 py-2'>
+            <label>E-Mail</label>
+            <input type="email" placeholder='email@email.com' className='px-4 py-2 text-black rounded-lg'/>
+          </div>
+          <div className='flex flex-col text-white px-20 py-2'>
+            <label>Telefone</label>
+            <input type="text" placeholder='(00) 0 0000-0000' className='px-4 py-2 text-black rounded-lg'/>
+          </div>
+          <div className='flex flex-col text-white px-20 p-2'>
+            <label>Mensagem</label>
+            <textarea cols="30" rows="10" placeholder='Insira sua mensagem aqui..' className='px-4 py-2 text-black rounded-lg'></textarea>
+          </div>
+          <div className='flex justify-end px-20'>
+            <button className='bg-yellow-500 px-5 py-2 rounded-lg mt-4'>Enviar Mensagem</button>
+          </div>
+        </div>
       </section>
-      
+      <footer className='bg-[#CACACA] py-5 px-12'>
+        <span className='text-sm'>Todos os direitos reservados a 3DEV</span>
+      </footer>
     </main>
   )
 }

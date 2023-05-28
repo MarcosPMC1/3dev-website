@@ -12,10 +12,10 @@ export default function Home() {
         <a className='hover:text-white' href="#contato">Contato</a>
         <a className='hover:text-white' href="#founders">Fundadores</a>
       </header>
-      <section className='p-10 flex flex-col gap-10'>
-        <div className='bg-slate-900 p-10 rounded-lg gap-2 flex flex-col mt-10'>
+      <section className='p-10 flex flex-col gap-10 items-center'>
+        <div className='bg-slate-900 p-10 rounded-lg gap-2 flex flex-col mt-10 w-10/12'>
           <h1 className='text-white text-5xl'>Portal do aluno personalizado</h1>
-          <span className='text-white text-lg'>Um portal totalmene personalizado de alunos, para sua instituição de ensino. Oferecendo diversas soluções práticas para você</span>d
+          <span className='text-white text-lg'>Um portal totalmene personalizado de alunos, para sua instituição de ensino. Oferecendo diversas soluções práticas para você</span>
           <div className='flex flex-row gap-10'>
             <img src="/portal.png" alt="" className='w-[600px]' />
             <div className='text-white'>
@@ -26,7 +26,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='bg-none p-16' id='modulos'>
+        <div className='bg-none p-16 w-10/12' id='modulos'>
           <h1 className='text-3xl text-white text-center'>Módulos</h1>
           <div className='flex flex-row flex-wrap gap-10 justify-around mt-24'>
             <div className='flex flex-col bg-slate-800 w-[350px] items-center rounded-lg'>
@@ -52,7 +52,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='text-white p-16 bg-slate-800 rounded-lg mt-48' id='sobre'>
+        <div className='text-white p-16 bg-slate-800 rounded-lg mt-48 w-10/12' id='sobre'>
           <h1 className='text-5xl'>Sobre nós</h1>
           <span className='text-lg'>
             Com o objetivo de fornecer um sistema altamente customizado com diversas funcionalidades
@@ -70,7 +70,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='bg-[#CACACA] p-10 rounded-lg mt-48' id='founders'>
+        <div className='bg-[#CACACA] p-10 rounded-lg mt-48 mx-64 w-10/12' id='founders'>
           <h1 className='text-slate-700 text-4xl py-2 text-center'>Fundadores</h1>
           <div className='flex flex-row flex-wrap justify-around py-16'>
             <div className='w-[200px] h-[300px] bg-slate-700 text-white flex flex-col items-center py-10 rounded-xl'>
@@ -92,7 +92,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='p-10 bg-slate-900 rounded-2xl mt-48' id='contato'>
+        <div className='p-10 bg-slate-900 rounded-2xl mt-48 w-10/12' id='contato'>
           <h1 className='text-yellow-500 py-10 text-3xl px-12'>Entre em contato</h1>
           <div className='flex flex-col text-white px-20 py-2'>
             <label>Nome</label>
@@ -115,7 +115,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <footer className='bg-[#CACACA] py-5 px-12'>
+      <footer className='bg-[#CACACA] py-5 px-12 mt-48'>
         <span className='text-sm'>Todos os direitos reservados a 3DEV</span>
       </footer>
     </main>

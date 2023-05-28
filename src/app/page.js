@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className='bg-[#251973] overflow-hidden'>
+    <main className='bg-gray-600 overflow-hidden'>
       <header className='w-screen bg-[#CACACA] flex flex-row items-center justify-around px-48 py-5'>
         <a className='hover:text-white' href="#">Sobre</a>
         <a className='hover:text-white' href="#">Serviço</a>
@@ -11,30 +11,42 @@ export default function Home() {
         <a className='hover:text-white' href="#">Fundadores</a>
       </header>
       <section className='p-10 flex flex-col gap-10'>
-        <div className='bg-[#044D8C] p-10 rounded-lg'>
+        <div className='bg-slate-900 p-10 rounded-lg gap-2 flex flex-col'>
           <h1 className='text-white text-5xl'>Portal do aluno personalizado</h1>
-          <span className='text-white text-lg'>Um portal totalmene personalizado de alunos, para sua instituição de ensino. Oferecendo diversas soluções práticas para você</span>
+          <span className='text-white text-lg'>Um portal totalmene personalizado de alunos, para sua instituição de ensino. Oferecendo diversas soluções práticas para você</span>d
+          <div className='flex flex-row gap-10'>
+            <img src="/portal.png" alt="" className='w-[600px]' />
+            <div className='text-white'>
+              <div>
+                <h2 className='text-2xl'>Ofereçemos um serviço personalizado</h2>
+                <span className='text-sm'>Nosso objetivo é solucionar os problemas de uma institução de ensino, criando soluções e automatizando processos</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className='flex flex-row flex-wrap gap-10 bg-none p-16 justify-around'>
-          <div className='flex flex-col bg-[#044D8C] w-[350px] items-center rounded-lg'>
-            <img className='rounded-t-lg' src='/chamada.jpg'></img>
-            <div className='p-10 flex flex-col items-center gap-10'>
-              <h2 className='text-white'>Sistema de presença</h2>
-              <span className='text-white'>Um sistema completo para controle de presença, com controle de faltas de todos os alunos</span>
+        <div className='bg-none p-16'>
+          <h1 className='text-3xl text-white'>Módulos</h1>
+          <div className='flex flex-row flex-wrap gap-10 justify-around mt-24'>
+            <div className='flex flex-col bg-slate-800 w-[350px] items-center rounded-lg'>
+              <img className='rounded-t-lg' src='/chamada.jpg'></img>
+              <div className='p-10 flex flex-col items-center gap-10'>
+                <h2 className='text-white'>Sistema de presença</h2>
+                <span className='text-white'>Um sistema completo para controle de presença, com controle de faltas de todos os alunos</span>
+              </div>
             </div>
-          </div>
-          <div className='flex flex-col bg-[#044D8C] w-[350px] items-center rounded-lg'>
-            <img className='rounded-t-lg' src='/chamada.jpg'></img>
-            <div className='p-10 flex flex-col items-center gap-10'>
-              <h2 className='text-white'>Laçamento de Notas</h2>
-              <span className='text-white'>Lançamento de notas, com possibilidade de revisões das notas e calculo automático de acordo com os pesos informados</span>
+            <div className='flex flex-col bg-slate-800 w-[350px] items-center rounded-lg'>
+              <img className='rounded-t-lg' src='/notas.jpg'></img>
+              <div className='p-10 flex flex-col items-center gap-10'>
+                <h2 className='text-white'>Laçamento de Notas</h2>
+                <span className='text-white'>Lançamento de notas, com possibilidade de revisões das notas e calculo automático de acordo com os pesos informados</span>
+              </div>
             </div>
-          </div>
-          <div className='flex flex-col bg-[#044D8C] w-[350px] items-center rounded-lg'>
-            <img className='rounded-t-lg' src='/chamada.jpg'></img>
-            <div className='p-10 flex flex-col items-center gap-10'>
-              <h2 className='text-white'>Criação de trabalhos</h2>
-              <span className='text-white'>Um serviço completo de criação e correção de trabalhos, com a correção automática a nota é lançada automaticamente no sistema</span>
+            <div className='flex flex-col bg-slate-800 w-[350px] items-center rounded-lg'>
+              <img className='rounded-t-lg' src='/trabalho.webp'></img>
+              <div className='p-10 flex flex-col items-center gap-10'>
+                <h2 className='text-white'>Criação de trabalhos</h2>
+                <span className='text-white'>Um serviço completo de criação e correção de trabalhos, com a correção automática a nota é lançada automaticamente no sistema</span>
+              </div>
             </div>
           </div>
         </div>

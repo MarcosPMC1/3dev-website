@@ -4,11 +4,11 @@ export default function Home() {
   return (
     <main className='bg-gray-600 overflow-hidden'>
       <header className='w-screen bg-[#CACACA] flex flex-row items-center justify-around px-48 py-5'>
-        <a className='hover:text-white' href="#">Sobre</a>
-        <a className='hover:text-white' href="#">Serviço</a>
+        <a className='hover:text-white' href="#sobre">Sobre</a>
+        <a className='hover:text-white' href="#modulos">Serviço</a>
         <img className='h-20' src='/p.png'></img>
-        <a className='hover:text-white' href="#">Contato</a>
-        <a className='hover:text-white' href="#">Fundadores</a>
+        <a className='hover:text-white' href="#contato">Contato</a>
+        <a className='hover:text-white' href="#founders">Fundadores</a>
       </header>
       <section className='p-10 flex flex-col gap-10'>
         <div className='bg-slate-900 p-10 rounded-lg gap-2 flex flex-col'>
@@ -24,7 +24,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='bg-none p-16'>
+        <div className='bg-none p-16' id='modulos'>
           <h1 className='text-3xl text-white'>Módulos</h1>
           <div className='flex flex-row flex-wrap gap-10 justify-around mt-24'>
             <div className='flex flex-col bg-slate-800 w-[350px] items-center rounded-lg'>
@@ -50,13 +50,13 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='text-white p-16'>
+        <div className='text-white p-16' id='sobre'>
           <h1 className='text-5xl'>Sobre nós</h1>
           <span className='text-lg'>
             Com o objetivo de fornecer um sistema altamente customizado com diversas funcionalidades
           </span>
         </div>
-        <div className='bg-[#CACACA] p-10 rounded-lg'>
+        <div className='bg-[#CACACA] p-10 rounded-lg' id='founders'>
           <h1 className='text-slate-700 text-3xl text-center'>Fundadores</h1>
           <div className='flex flex-row flex-wrap justify-around mt-28'>
             <div className='w-[200px] h-[350px] bg-slate-700 text-white flex flex-col items-center py-10 rounded-xl'>
@@ -78,7 +78,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='p-10 bg-slate-900 rounded-2xl'>
+        <div className='p-10 bg-slate-900 rounded-2xl' id='contato'>
           <h1 className='text-white text-2xl px-12'>Entre em contato</h1>
           <div className='flex flex-col text-white px-20 py-2'>
             <label>Nome</label>

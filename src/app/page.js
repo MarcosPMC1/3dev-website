@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import {TbTargetArrow} from 'react-icons/tb'
 import {FaRegEye} from 'react-icons/fa'
+import {AiOutlineHeart} from 'react-icons/ai'
 
 export default function Home() {
   return (
@@ -63,7 +64,7 @@ export default function Home() {
               <span className='mt-10'>Liderar como provedor de soluções digitais educacionais, impulsionando a transformação do ambiente acadêmico e promovendo o sucesso dos estudantes.</span>
             </div>
             <div className='flex flex-col text-center items-center w-[250px] border-2 border-white rounded-md p-10'>
-              <FaRegEye size={64} />
+              <AiOutlineHeart size={64} />
               <h2 className='text-2xl'>Valores</h2>
               <span className='mt-10'>Temos tranparencia de nosso projeto, valorizamos a criatividade de nossos colaboradores e um ambiente saudavél e respeitoso.</span>
             </div>

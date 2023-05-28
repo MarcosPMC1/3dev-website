@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import {TbTargetArrow} from 'react-icons/tb'
+import {FaRegEye} from 'react-icons/fa'
 
 export default function Home() {
   return (
@@ -50,11 +52,23 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='text-white p-16' id='sobre'>
+        <div className='text-white p-16 bg-slate-800 rounded-lg' id='sobre'>
           <h1 className='text-5xl'>Sobre nós</h1>
           <span className='text-lg'>
             Com o objetivo de fornecer um sistema altamente customizado com diversas funcionalidades
           </span>
+          <div className='flex flex-row flex-wrap py-10 px-10 justify-around'>
+            <div className='flex flex-col text-center items-center w-[250px] border-2 border-white rounded-md p-10'>
+              <TbTargetArrow size={64} />
+              <h2 className='text-2xl'>Missão</h2>
+              <span className='mt-10'>Inovar a gestão acadêmica através do sistema de portal, facilitando a comunicação e promovendo uma experiência educacional de excelência.</span>
+            </div>
+            <div className='flex flex-col text-center items-center w-[250px] border-2 border-white rounded-md p-10'>
+              <FaRegEye size={64} />
+              <h2 className='text-2xl'>Visão</h2>
+              <span className='mt-10'>Liderar como provedor de soluções digitais educacionais, impulsionando a transformação do ambiente acadêmico e promovendo o sucesso dos estudantes.</span>
+            </div>
+          </div>
         </div>
         <div className='bg-[#CACACA] p-10 rounded-lg' id='founders'>
           <h1 className='text-slate-700 text-3xl text-center'>Fundadores</h1>
